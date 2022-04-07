@@ -1,0 +1,41 @@
+@import url("https://cdn.jsdelivr.net/gh/GoCloudHub/font-amazon-ember/fonts/amazonember/amazonember.css");
+
+:root {
+    --back_blue: #232F3E;
+    --prime_blue: rgb(0,168,225);
+    --prime_blue_hover: rgb(100, 168, 225);
+    --text_white: #F4F6F6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--back_blue);
+    font-family: "Amazon Ember", Arial, monospace;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+    margin: 20px;
+    justify-content: left;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--text_white);
+    margin-left: 30px;
+}
+
+header nav a:hover{
+    color: var(--prime_blue_hover);
+}

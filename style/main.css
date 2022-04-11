@@ -1,10 +1,7 @@
-@import url("https://cdn.jsdelivr.net/gh/GoCloudHub/font-amazon-ember/fonts/amazonember/amazonember.css");
 
 :root {
-    --back_blue: #232F3E;
-    --prime_blue: rgb(0,168,225);
-    --prime_blue_hover: rgb(100, 168, 225);
-    --text_white: #F4F6F6;
+    --back:#141414;
+    --red: #E50914;
 }
 
 * {
@@ -13,29 +10,58 @@
     box-sizing: border-box;
 }
 
+/*Base elements*/
+
 body {
-    background-color: var(--back_blue);
-    font-family: "Amazon Ember", Arial, monospace;
+    background-color: var(--back);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 header .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.logo{
-    width: 150px;
-    margin: 20px;
     justify-content: left;
+    margin: 10px;
 }
 
+header .logo{
+    color: #E50914;
+    font-family: 'Arial Black', Times;
+    font-size: 35px;
+}
 header nav a{
     text-decoration: none;
     color: var(--text_white);
+    color: #fff;
     margin-left: 30px;
+    margin-right: 10px;
+    font-size: 17px;
 }
 
 header nav a:hover{
-    color: var(--prime_blue_hover);
+    color: #AAA;
+}
+
+/*Main Film*/
+.main-film{
+    font-size: 20px;
+    background: linear-gradient(rgba(0,0,0,.900), rgba(0, 0, 0, .300) 100%), url('/img/saul-banner.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-film .description{
+    margin-bottom: 50px;
+}
+
+.title{
+    font-size: 40px;
 }
